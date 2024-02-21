@@ -12,6 +12,9 @@
 	"publishConfig": {
 		"@lucas-dtrn:registry": "https://npm.pkg.github.com"
 	},
+	"settings": {
+		"autoInstallPeers": true
+	},
 	"scripts": {
 		"build": "tsup index.ts --format cjs,esm --dts",
 		"release": "pnpm run build && changeset publish",
